@@ -1,0 +1,42 @@
+"""A Rock, Paper, Scissors Game"""
+
+import random;
+
+walker RPSGame {
+    has str player_move;
+
+    can start with root entry;
+    can decide with turn entry;
+
+    start {
+        spawn -> plays turn(player_move=player_move);
+        take -> plays;
+    }
+
+    decide {
+        if (
+            (here.player_move == "rock" and here.computer_move == "scissors") or
+            (here.player_move == "paper" and here.computer_move == "rock") or
+            (here.player_move == "scissors" and here.computer_move == "paper")
+        ) {
+            // player wins
+        }
+        elif (here.player_move == here.computer_move) {
+            // tie
+        }
+        else {
+            // computer wins
+        }
+    }
+}
+
+node turn {
+    has str player_move;
+    has str computer_move = random.choice(["rock", "paper", "scissors"]);
+}
+
+with entry: __main__ {
+    root spawn RPSGame(player_move="rock");
+    root spawn RPSGame(player_move="paper");
+    root spawn RPSGame(player_move="scissors");
+}
