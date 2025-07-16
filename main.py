@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 # Access secret keys
-api_key = os.environ.get("groq_key")
+api_key = os.environ.get("GLOQ_API_KEY")
 
 os.environ['GROQ_API_KEY'] = api_key
 response = completion(
