@@ -1,7 +1,14 @@
 from litellm import completion
+from dotenv import load_dotenv
 import os
 
-os.environ['GROQ_API_KEY'] = "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"
+# Load .env file
+load_dotenv()
+
+# Access secret keys
+api_key = os.environ.get("groq_key")
+
+os.environ['GROQ_API_KEY'] = api_key
 response = completion(
     model="groq/llama-3.3-70b-versatile", 
     messages=[
