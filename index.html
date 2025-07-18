@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="" id="scissor">scissor</button>
+    <button id="paper">paper</button>
+    <button id="rock">rock</button>
+
+    <div class="" id="show"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Premium Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 Rock Paper Scissors</h1>
+        
+        <div class="score-section">
+            <div class="score-item">
+                <div class="score-label">Score</div>
+                <div class="score-value" id="score">10</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Wins</div>
+                <div class="score-value" id="wins">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Losses</div>
+                <div class="score-value" id="losses">0</div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <button class="choice-btn" id="rock">
+                <div class="choice-icon">🪨</div>
+                <div class="choice-label">Rock</div>
+            </button>
+            <button class="choice-btn" id="paper">
+                <div class="choice-icon">📄</div>
+                <div class="choice-label">Paper</div>
+            </button>
+            <button class="choice-btn" id="scissor">
+                <div class="choice-icon">✂️</div>
+                <div class="choice-label">Scissors</div>
+            </button>
+        </div>
+
+        <div class="loading hidden" id="loading">
+            <div class="loading-spinner"></div>
+            AI is thinking...
+        </div>
+
+        <div class="result-section hidden" id="result-section">
+            <div class="result-title">Battle Result</div>
+            <div class="battle-display">
+                <div class="player-choice">
+                    <div class="choice-display" id="player-display">🤔</div>
+                    <div class="choice-name">You</div>
+                </div>
+                <div class="vs-text">VS</div>
+                <div class="ai-choice">
+                    <div class="choice-display" id="ai-display">🤖</div>
+                    <div class="choice-name">AI</div>
+                </div>
+            </div>
+            <div class="outcome-message" id="outcome-message">Ready to play!</div>
+            <div class="score-change" id="score-change"></div>
+        </div>
+
+        <div class="game-over hidden" id="game-over">
+            <h2>🎮 Game Over!</h2>
+            <p>Your score reached 0. Better luck next time!</p>
+            <button class="restart-btn" id="restart-btn">Play Again</button>
+        </div>
+
+        <div class="history-section">
+            <div class="history-title">Recent AI Choices</div>
+            <div class="history-list" id="history-list">
+                <div class="history-item">Game started</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
