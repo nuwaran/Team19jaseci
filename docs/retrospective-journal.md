@@ -80,3 +80,11 @@ Recorded: `2026-09-13T12:18:08+05:30`. This is retrospective documentation, not 
 - Catalog reference: `style.css` — [open the existing snapshot file](https://github.com/nuwaran/Team19jaseci/blob/a02d82a46b7f33838fbe9134c143e718ef3312c3/style.css).
 - Git object: `2e59beb808958d35b5c14aad4c3135d77bfae377`; mode `100644`; type `blob`.
 - Purpose: make the existing project evidence traceable to a specific, immutable snapshot. File contents, credentials, and private data are not copied into this journal.
+
+### J0009 — calendar label 2025-09-18
+
+Recorded: `2026-09-13T12:18:08+05:30`. This is retrospective documentation, not a claim of work on `2025-09-18`.
+
+- Catalog reference: `README.md` — [open the existing snapshot file](https://github.com/nuwaran/Team19jaseci/blob/a02d82a46b7f33838fbe9134c143e718ef3312c3/README.md).
+- Git object: `0729ea81aed140bbdd54d2a208401d7b3a92649d`; mode `100644`; type `blob`.
+- Purpose: make the existing project evidence traceable to a specific, immutable snapshot. File contents, credentials, and private data are not copied into this journal.
